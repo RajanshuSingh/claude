@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Student Finance Management</h1>
+        <p>Track and manage your finances effectively.</p>
+    </header>
+
+    <!-- Gamification Section -->
+    <section id="gamification-section">
+        <h2>Your Progress</h2>
+        <div id="points-display">Points: <span id="points">0</span></div>
+        <div id="level-display">Level: <span id="level">1</span></div>
+        <div id="badges-display">Badges: <span id="badges">No badges earned yet</span></div>
+    </section>
+
+    <!-- Budgeting Tools -->
+    <section id="budgeting-tools">
+        <h2>Budgeting Tools</h2>
+        <form id="expense-form">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="utilities">Utilities</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter expense amount" required>
+
+            <button type="submit">Add Expense</button>
+        </form>
+    </section>
+
+    <!-- Savings Goals -->
+    <section id="savings-goals">
+        <h2>Savings Goals</h2>
+        <form id="goal-form">
+            <label for="goal-name">Goal:</label>
+            <input type="text" id="goal-name" placeholder="Goal name" required>
+
+            <label for="target-amount">Target Amount:</label>
+            <input type="number" id="target-amount" placeholder="Enter target amount" required>
+
+            <button type="submit">Add Goal</button>
+        </form>
+
+        <!-- Example of Goal Progress -->
+        <div class="goal">
+            <p>Goal: Buy a Laptop</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 0%;">0%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monthly Report -->
+    <section id="monthly-report">
+        <h2>Monthly Report</h2>
+        <button id="generate-report">Generate Report</button>
+        <div id="report-output"></div>
+    </section>
+
+    <!-- Financial Health Tips -->
+    <section id="financial-tips">
+        <h2>Financial Health Tips</h2>
+        <div id="tips-container">
+            <p>Keep track of your expenses regularly to avoid overspending.</p>
+            <p>Set realistic savings goals to improve your financial habits.</p>
+            <p>Try to avoid unnecessary spending on non-essential items.</p>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
